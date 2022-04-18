@@ -1,0 +1,105 @@
+:root{
+  /* https://paletton.com/#uid=72H0x0kv4vdi+Ceoawdw2oiBYj7 */
+  --primary-0: #44D606;
+  --primary-1: #85E35C;
+  --primary-2: #67DB36;
+  --primary-3: #32A600;
+  --primary-4: #278300;
+  --secondary-1-0: #059E84;
+  --secondary-1-1: #4AB7A4;
+  --secondary-1-2: #28A28E;
+  --secondary-1-3: #007B66;
+  --secondary-1-4: #006050;
+  --secondary-2-0: #F96907;
+  --secondary-2-1: #FFA568;
+  --secondary-2-2: #FF8C3E;
+  --secondary-2-3: #C24E00;
+  --secondary-2-4: #983E00;
+  --complement-0: #E9072F;
+  --complement-1: #F3637C;
+  --complement-2: #EF3B5B;
+  --complement-3: #B60020;
+  --complement-4: #8F0019;
+}
+body {
+  margin: 50px;
+  padding: 0;
+  background: var(--secondary-1-0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  background-color: var(--secondary-1-1);
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+}
+
+
+.player-bar {
+  width: 90%;
+  height: 8px;
+  margin: 16px auto;
+  background: var(--complement-4);
+  position: relative;
+  cursor: pointer;
+}
+.player-bar.disabled {
+  opacity: 0.5;
+}
+
+.player-seeker {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-4);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 40;
+}
+
+
+/*
+*  episodes
+*/
+.episodes-container {
+  display: flex;
+}
+
+.episody-item {
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+  margin: 4px;
+  padding: 4px;
+  background: var(--secondary-2-1)
+}
+
+.play-buttons-container {
+  height: 40px;
+  text-align: center;
+  margin: 16px;
+}
+
+.play-button {
+  height: 40px;
+}
+
+.player-bar-marker {
+  height: 100%;
+  background: var(--secondary-2-2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.advertisement-item {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 16px;
+}
